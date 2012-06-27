@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/csc478_mastermind/!svn/ver/47/Mastermind/src/edu/uis/mastermind/model
+END
+GameBoard.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/csc478_mastermind/!svn/ver/47/Mastermind/src/edu/uis/mastermind/model/GameBoard.java
+END
+GameManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/csc478_mastermind/!svn/ver/47/Mastermind/src/edu/uis/mastermind/model/GameManager.java
+END
+KeyPeg.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/csc478_mastermind/!svn/ver/46/Mastermind/src/edu/uis/mastermind/model/KeyPeg.java
+END
+CodePeg.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/csc478_mastermind/!svn/ver/46/Mastermind/src/edu/uis/mastermind/model/CodePeg.java
+END
+MatchManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/csc478_mastermind/!svn/ver/47/Mastermind/src/edu/uis/mastermind/model/MatchManager.java
+END
+Player.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/csc478_mastermind/!svn/ver/47/Mastermind/src/edu/uis/mastermind/model/Player.java
+END

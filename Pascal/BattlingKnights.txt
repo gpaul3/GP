@@ -1,0 +1,330 @@
+program pHW33;
+
+(WRITTEN IN PASCAL)
+
+{Geoffrey Paulsen
+ April 6, 2012
+ CSC 540 - Graduate Research Seminar
+ HW3 - Battling Knights 
+
+ This program simulates two knights moving randomly on a chess board of varying
+ sizes. The black knight starts at the upper right hand corner of the board and
+ the white knight starts at the lower left hand corner of the board. When one of
+ the knights randomly lands on a square that is occupied by another knight the
+ moving knight wins the game. At the end of each game the win is recorded and
+ the players are moved back to their starting positions and the next game begins.
+
+ The program automatically generates data of the results of matches consisting
+ of 2, 4, 8, 16, 32, 64, 128, 256, 512, and 1024 games. Each number of games is
+ played on a board of 6X6, 8X8, 10X10, 12X12 and 16X16 squares.
+
+ In the course of devloping my program I noticed that each player that went first
+ always lost for some reason. As a result, their is a coin toss to determine
+ which player moves first. Using this method I was able to generate meanigful
+ data even though I could not figure out why my program behaved the way it did.
+
+* The file generated from this program will be located at: C:\Temp\paulsenHW3.txt }
+
+
+uses
+  sysutils;
+
+{knight record data strcture holds color and x,y coordinates}
+Type
+  knight = Record
+         color: String;
+         x, y : integer;
+         End;
+
+
+{arrays of number of games and board dimensions}
+var GameNumber : array [1..10] of integer = (2, 4, 8, 16, 32, 64, 128, 256, 512, 1024);
+var BoardDimension : array [1..5] of integer = (6, 8, 10, 12, 16);
+
+ {variables of program}
+  var i,j,n,b,d, totalTurns, games, wWins, bWins,turnsPerGame: integer;
+      squares : integer;
+      lowestTurns, highestTurns : qword;
+      gameWon : boolean;
+      whiteKnight, blackKnight,firstPlayer, secondPlayer : knight;
+      var theFile : text;
+          fileName, filePath : string;
+          currentTime : TDateTime;
+
+
+procedure move (var tk : knight; s: integer);
+{moves each knight at random while preventing out of bounds moves}
+  var c : integer;
+  begin {move}
+     c := random(8);
+     {random number makes move choice and if illegal generates another choice}
+     if (c = 0) then
+        begin
+        if (tk.x < (s - 1)) and (tk.y < (s - 2)) then
+         begin
+	   tk.x := tk.x + 1;
+	   tk.y := tk.y + 2;
+         end
+        else
+         move (tk, s);
+        end
+     else if (c = 1) then
+        begin
+        if (tk.x < (s - 1)) and (tk.y > 1) then
+         begin
+	   tk.x := tk.x + 1 ;
+	   tk.y := tk.y - 2 ;
+         end
+        else
+         move (tk, s);
+         end
+     else if (c = 2) then
+      begin
+      if (tk.x > 0) and (tk.y < (s - 2)) then
+         begin
+	   tk.x := tk.x - 1;
+	   tk.y := tk.y + 2;
+         end
+      else
+         move (tk, s);
+      end
+     else if (c = 3) then
+        begin
+        if (tk.x > 0) and (tk.y > 1) then
+         begin
+	   tk.x := tk.x - 1;
+	   tk.y := tk.y - 2;
+         end
+         else
+         move (tk, s);
+         end
+     else if (c = 4) then
+      begin
+      if (tk.x < (s - 2)) and (tk.y < (s - 1)) then
+         begin
+	   tk.x := tk.x + 2;
+	   tk.y := tk.y + 1;
+         end
+      else
+      move (tk, s);
+      end
+     else if (c = 5) then
+        begin
+        if (tk.x < (s - 2)) and (tk.y > 0) then
+         begin
+	   tk.x := tk.x + 2;
+	   tk.y := tk.y - 1;
+         end
+        else
+        move (tk, s);
+        end
+     else if (c = 6) then
+      begin
+      if (tk.x > 1) and (tk.y < (s - 1)) then
+         begin
+	   tk.x := tk.x - 2;
+	   tk.y := tk.y + 1;
+         end
+      else
+      move (tk, s);
+      end
+     else
+     begin
+     if (tk.x > 1) and (tk.y > 0) then
+         begin
+	   tk.x := tk.x - 2;
+	   tk.y := tk.y - 1;
+         end
+     else
+     move (tk, s);
+     end
+  end; {move}
+{toss coin randomly determines which knight goes first}
+function tossCoin : boolean;
+  begin
+   j := random(2);
+   if (j = 0) then
+       begin
+       tossCoin:= true;
+       end
+   else
+       begin
+       tossCoin:= false;
+       end
+  end;
+{slayer determines if the player who moved landed on the other player and slayed
+them and if so, then the win is tabulated and boolean value of true is returned.
+If not, then boolean value of false is returned}
+function slayer (mover : integer) : boolean;
+begin
+  if mover = 1 then
+    begin
+      if (firstPlayer.x = secondPlayer.x) and (firstPlayer.y = secondPlayer.y) then
+       begin
+       slayer := true;
+         if firstPlayer.color = 'white' then
+          begin
+           wWins := wWins + 1;
+          end
+         else
+          begin
+           bWins := bWins + 1;
+          end
+       end
+       else
+       begin
+      slayer := false;
+     end
+     end
+ else
+  begin
+     if (secondPlayer.x = firstPlayer.x) and (secondPlayer.y = firstPlayer.y) then
+       begin
+       slayer := true;
+        if secondPlayer.color = 'black' then
+         begin
+          bWins := bWins + 1;
+         end
+        else
+         begin
+          wWins := wWins + 1;
+         end
+        end
+     else
+     begin
+     slayer := false;
+     end
+  end
+end;
+
+
+begin{main program}
+
+{create text file}
+fileName := 'paulsenHW3';
+filePath :=  'C:\Temp\' + fileName + '.txt';
+Assign(theFile, filePath);
+rewrite(theFile);
+{header for the text file}
+writeln (theFile, 'Geoffrey Paulsen ');
+writeln (theFile, 'CSC 540 - Graduate Resarch Seminar');
+writeln (theFile, 'HW3: Battling Knights');
+writeln (theFile, 'April 13, 2012 ');
+writeln (theFile, '');
+currentTime := Now;
+writeln (theFile, 'File created at ', TimeToStr(currentTime), ' on ' , DateToStr(currentTime));
+writeln (theFile, '');
+writeln (theFile, 'Here is the data of my simulated knight battles: ');
+writeln (theFile, '');
+
+whiteKnight.color := 'white';
+blackKnight.color := 'black';
+
+d := 1 ;
+
+for b := 1 to 5 do {array of board dimensions}
+ begin
+
+for n := 1 to 10 do {array of number of games}
+ begin
+ games := GameNumber[n];
+
+
+ {reset game stats}
+ totalTurns := 0;
+ wWins := 0;
+ bWins := 0;
+ lowestTurns := 10000;
+ highestTurns := 0;
+
+
+{print header which includes data point #, game number, and board size}
+ squares :=  BoardDimension[b];
+ writeln (theFile, '-----------------------------------------------');
+ writeln (theFile, 'Data Point [',d, ']: ',GameNumber[n],' games on a ', BoardDimension[b], ' X ', BoardDimension[b], ' board'  );
+ writeln (theFile, '-----------------------------------------------');
+
+ randomize;
+
+{loop for given number of games}
+ for i := 1 to games do
+ begin
+  whiteKnight.x := squares - 1 ;
+  whiteKnight.y := 0;
+  blackKnight.x := 0;
+  blackKnight.y := squares - 1 ;
+  turnsPerGame := 0;
+  gameWon := false;
+
+{tossCoin randomly choose which player goes first}
+   if(tossCoin = false) then
+    begin
+     firstPlayer := whiteKnight;
+     secondPlayer := blackKnight;
+    end
+   else
+    begin
+     firstPlayer := blackKnight;
+     secondPlayer := whiteKnight;
+    end;
+
+{game play loop - each player takes a turn moving}
+    while (gameWon = false) do
+     begin {while}
+     totalTurns := totalTurns + 1; {keep track of total turns}
+     turnsPerGame := turnsPerGame + 1;{keep track of turns for a game}
+
+     move(firstPlayer, squares);{first player moves}
+     if slayer(1) = true then {checks if first player slayed the second player}
+      gameWon := true;
+
+     move(secondPlayer, squares);{second player moves}
+     if slayer(2) = true then {checks if second player slayed the first player}
+      gameWon := true;
+
+     if (turnsPerGame = 6000) then {max turns each game to prevent infinite loop}
+      begin {reset players to starting positions}
+        whiteKnight.x := squares - 1 ;
+        whiteKnight.y := 0;
+        blackKnight.x := 0;
+        blackKnight.y := squares - 1 ;
+      end
+     end; {end while}
+
+ {keep track of lowest and highest turns per game}
+  if (turnsPerGame < lowestTurns) then
+    lowestTurns := turnsPerGame;
+  if (turnsPerGame > highestTurns) then
+    highestTurns := turnsPerGame;
+
+end; {end for loop}
+     writeln(theFile,''); {show stats for round}
+     writeln (theFile,'White knight victories   : ', (wWins / games * 100):3:2, '%', ' (', wWins, ')');
+     writeln (theFile,'Black knight victories   : ', (bWins / games * 100):3:2, '%', ' (', bWins, ')');
+     //avgTurns := (totalTurns div games) ; {calculate avg turns per round}
+     writeln (theFile,'');
+     writeln (theFile,'Average number of turns  : ', (totalTurns / games):3:1);
+     writeln (theFile,'Shortest number of turns : ' , lowestTurns);
+     writeln (theFile,'Longest number of turns  : ' , highestTurns);
+     writeln (theFile,'');
+     writeln (theFile,'');
+     d := d + 1;
+ end;
+end;
+{close text file}
+close(theFile);
+
+{print info of file location and time created to screen}
+writeln ('Geoffrey Paulsen ');
+writeln ('CSC 540 - Graduate Resarch Seminar - HW3');
+writeln ('Apri 13, 2012 ');
+writeln;
+writeln ('File created at ', TimeToStr(currentTime), ' on ' , DateToStr(currentTime));
+writeln;
+
+{print path of file location to screen for user}
+writeln('The file created from this program is located at : ', filePath);
+writeln;
+writeln('Press ENTER to finish the program.');
+readln;
+end.

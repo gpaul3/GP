@@ -1,0 +1,1 @@
+This repsitory contains projects completed during the course of my school work.

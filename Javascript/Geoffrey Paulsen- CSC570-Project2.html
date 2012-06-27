@@ -1,0 +1,179 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Geoffrey Paulsen - Project 2</title>
+
+<style type="text/css"> 
+th{background-color:#C0C0C0; color:#FFFFFF; border: solid 2px black; height: 3em; } 
+#addButton{width:200px; }
+#resultbox { border: solid 2px; } 
+#results, #searchHistory, .dropBox, #results4 {background-color: #F5F5F5; width: 200px; height: 600px; border: solid 2px}
+#timer1, #timer2, #timer3 { width: 200px; height: 25px; text-align: center} 
+div.dropBox {overflow: auto; font-size: 80%; }
+body{margin-left: 50px ; margin-top: 50px}
+#searchHistory{background-color: #F5F5F5}
+#searchItem{ background-color: #FFDDF4; width: 195px; position:absolute; left:52px; top:30px;}
+#greeting{width: 600px;   position:absolute; left:300px; top:12px;   }
+@import "jquery.countdown.css";
+</style>
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+  	<script type="text/javascript" src="jquery.countdown.js"></script>
+   <script>			
+        	$(document).ready(function(){
+        		
+        		function TwitterGroup (tTimer, tDisplay, tSubject)  {
+    			this.tTimer = tTimer;
+    			this.tDisplay = tDisplay;
+    			this.tSubject = tSubject;
+    			this.loadResults = function() {
+        		searchTwitter(this.tSubject, this.tDisplay)
+    			};
+			    }
+			    
+			    //set up three instances of the TwitterGroup
+        		var tg1 = new TwitterGroup($("#timer1"),$('#results1'), null);
+        		var tg2 = new TwitterGroup($("#timer2"),$('#results2'), null);
+        		var tg3 = new TwitterGroup($("#timer3"),$('#results3'), null);
+        		
+        		function MakeTimer(node, duration){
+   				node.countdown({until: duration, format: "s", compact: true, onExpiry: resetTimer });
+				}
+        		
+        		function resetTimer(){
+   				var nodeID = "#" + this.id;
+   				var duration = $(nodeID).countdown('settings','until');
+   				$(nodeID).countdown('change','until', duration);
+   				if(nodeID == "#timer1") {
+   					document.getElementById("results1").value = "";  
+   					tg1.loadResults()}
+   				else if(nodeID == "#timer2"){
+   					document.getElementById("results2").value = "";  
+   					tg2.loadResults()}
+   				else if(nodeID == "#timer3"){
+   					document.getElementById("results3").value = "";  
+   					tg3.loadResults()}
+   				else{}
+				}
+				
+				
+				function resetMyTimer(myTimer){//resets timer given as argument
+   				var tNode = myTimer
+   				var nodeID = "#" + this.id;
+   				var duration = $(tNode).countdown('settings','until');
+   				$(tNode).countdown('change','until', duration);
+   				if(nodeID == "#timer1") {
+   					document.getElementById("results1").value = "";  
+   					tg1.loadResults()}
+   				else if(nodeID == "#timer2"){
+   					document.getElementById("results2").value = "";
+   					tg2.loadResults()}
+   				else if(nodeID == "#timer3"){
+   					document.getElementById("results3").value = "";
+   					tg3.loadResults()}
+   				else{}
+				}
+        		    	
+        		$("#addButton").click(function(){       			
+        			var dropArea;
+        			var dl = $("#searchHistory");
+        			var dt = $("<dt></dt>").text($("#searchItem").val()).appendTo(dl);
+        			$(dt).draggable({helper:'clone'});
+        			
+        			
+        			if (!($('#results1').html().trim())) {//checks to see if the first results area is empty
+  						dropArea = tg1.tDisplay;
+  						tg1.tSubject = $("#searchItem").val();
+  						MakeTimer(tg1.tTimer,30);
+  						}
+  					else if (!($('#results2').html().trim())) {//checks to see if the second results area is empty
+  						dropArea = tg2.tDisplay;
+  						tg2.tSubject = $("#searchItem").val();
+  						MakeTimer(tg2.tTimer,30);
+  						}
+  					else if (!($('#results3').html().trim())) { //checks to see if the third results area is empty
+  						dropArea = tg3.tDisplay;
+  						tg3.tSubject = $("#searchItem").val();
+  						MakeTimer(tg3.tTimer,30);
+  						}
+  					else{
+  						 
+  					}	
+  						
+        			searchTwitter (($("#searchItem").val()), dropArea) ;
+        			document.getElementById("searchItem").value = "";     			
+        		});   
+        		
+        		$("#searchHistory").draggable();
+        			
+		   		$(".dropBox").droppable({//pass which area dropped on as a parameter
+					drop: function(ev, ui) {
+				    var dragText = $(ui.draggable).text();
+				    var droppedOn = $(this);
+				    var id = $(this).attr("id");
+        			if ($(this).attr("id") == "results1"){
+				    MakeTimer(tg1.tTimer,30);
+				    resetMyTimer(tg1.tTimer);
+				    tg1.tSubject = dragText ;
+				    }
+				    else if ($(this).attr("id") == "results2"){
+				    MakeTimer(tg2.tTimer,30);
+				    resetMyTimer(tg2.tTimer);	
+				    tg2.tSubject = dragText ;
+				    }
+				    else{
+				    MakeTimer(tg3.tTimer,30);	
+				    resetMyTimer(tg3.tTimer);	
+				    tg3.tSubject = dragText ;	
+				    }
+				    searchTwitter(dragText, droppedOn);
+					}
+				  });
+    				
+        		function searchTwitter(term, droppedItem){
+        			var url = "http://search.twitter.com/search.json?callback=?";
+        			var data = {"q": term};
+        			
+        			$.getJSON(url, data, function(data){
+        				for (var i=0; i < data.results.length; i++) {
+						  var result = data.results[i];
+						  var d = $("<div></div>");
+						  var tweetlink = $("<a></a>");
+						  var tweeturl = "http://twitter.com/#!/" + result.from_user + "/status/" + result.id_str; 
+						  tweetlink.text(result.from_user);
+						  tweetlink.attr("href", tweeturl);
+						  d.append($("<span></span>").text(result.text));
+						  d.prepend(tweetlink.after(" "));
+						  $(droppedItem).prepend(d);	
+						 }
+						});
+					}
+        });//end document.ready
+        </script>
+</head>
+<body>
+<table>
+     <tr>
+     <td><input id="searchItem" type="textbox"></input></td><td id="greeting"><h3>Enter a 
+         subject to search on Twitter and press the button!</h3>
+         <p>Drag terms from the Search Histoy into the Result Display columns to refresh 
+             posted tweets.</p>
+         </td>
+     </tr></table>
+   	  <table>
+   	 <tr>
+   	 	<td><button id="addButton">Search Twitter</button></td>
+   	 	<td><div id="timer1"></div></td>
+   	 	<td><div id="timer2"></div></td>
+   	 	<td><div id="timer3"></div></td>
+   	 	</tr>
+      <tr><th>Search History</th><th>Result Display</th><th>Result Display</th><th>Result Display</th></tr>
+      <tr>
+      <td><div id="searchHistory"></div></td>     	
+      <td><div id="results1" class="dropBox"></div></td>
+      <td><div id="results2" class="dropBox"></div></td>
+      <td><div id="results3" class="dropBox"></div></td>
+      </tr>
+   </table>
+</html>

@@ -1,0 +1,474 @@
+package edu.uis.mastermind;
+
+import java.awt.Color;
+import java.awt.EventQueue;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.Arrays;
+
+import javax.swing.JOptionPane;
+
+import edu.uis.mastermind.model.CodePeg;
+import edu.uis.mastermind.model.GameManager;
+import edu.uis.mastermind.model.KeyPeg;
+import edu.uis.mastermind.model.MatchManager;
+import edu.uis.mastermind.view.CodePegPanel;
+import edu.uis.mastermind.view.GameBoardView;
+import edu.uis.mastermind.view.KeyPegPanel;
+
+public class GameController implements ActionListener {
+
+	private GameBoardView gameBoardView;
+	private CodePegPanel codeRow;
+	private CodePegPanel guessRows;
+	private KeyPegPanel feedbackRows;
+	
+	private GameManager gameManager;
+	private MatchManager matchManager;
+	
+	private int numPlayers;
+	
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					GameController gameController = new GameController();
+					gameController.gameBoardView.setVisible(true);
+					gameController.showNumberOfPlayersDialog();
+					gameController.start();
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});	
+	}
+
+	/**
+	 * Constructor
+	 * Create the application.
+	 */
+	public GameController() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the game.
+	 */
+	private void initialize() {
+		
+		/*
+		 * Initialize the Model
+		 */
+		gameManager = new GameManager();
+		
+		/*
+		 * Initialize the View
+		 */
+		gameBoardView = new GameBoardView();
+		gameBoardView.getGuessButton().addActionListener(this);
+		gameBoardView.getCodeButton().addActionListener(this);
+		
+		// create 1 code row
+		int[] codeRowBounds = {17, 23, 178, 35};
+		codeRow = new CodePegPanel(1, codeRowBounds);
+		gameBoardView.getContentPane().add(codeRow);
+		
+		// create 10 guess rows
+		int[] guessRowBounds = {18, 83, 175, 406};
+		guessRows = new CodePegPanel(gameManager.getMaxGuesses(), guessRowBounds);
+		gameBoardView.getContentPane().add(guessRows);
+		
+		// create 10 feedback rows
+		feedbackRows = new KeyPegPanel(gameManager.getMaxGuesses());
+		gameBoardView.getContentPane().add(feedbackRows);
+		
+	}
+	
+	/**
+	 * Configure a 1 or 2 player game
+	 */
+	private void start() {
+		if (numPlayers == 2) {
+			// 2 player game
+			String player1Name = showPlayerNameDialog(1);
+			String player2Name = showPlayerNameDialog(2);
+			matchManager = new MatchManager(player1Name, player2Name);
+		}
+		startNewGame();
+	}
+	
+	/**
+	 * Starts a brand new game
+	 */
+	private void startNewGame() {
+		resetView();
+		gameManager.startGame();
+		
+		if (numPlayers == 1) {
+			// 1 player game
+			gameManager.setRandomCode();
+			codeRow.setVisible(false);
+			codeRow.enableRow(0, false);
+			codeRow.setPegColors(convertCodePegRowToColorRow(gameManager.getCodeRow()));
+<<<<<<< .mine
+			guessRows.enableRow(getCurrentRow(), true);
+			
+=======
+			
+			// enable 1st guess row
+			guessRows.enableRow(getCurrentRow(), true);
+>>>>>>> .r32
+		} else {
+			// 2 player game
+			showSetCodeDialog(matchManager.getCurrentCodeMaker().getName());
+			
+			// enable code row
+			codeRow.enableRow(0, true);
+			gameBoardView.getCodeButton().setVisible(true);
+			
+			// disable guess button
+			gameBoardView.getGuessButton().setEnabled(false);
+		}
+	}
+	
+	/**
+	 * reset the views at the start of each game
+	 */
+	private void resetView() {
+		codeRow.reset();
+		guessRows.reset();
+		feedbackRows.reset();
+	}
+	
+	/**
+	 * Handle the end of game state for both 1 and 2 player games.
+	 * If current state is 2 player then determine if it is:
+	 * 1. end of round, or
+	 * 2. end of match.
+	 */
+	private void endGame() {
+		if (numPlayers == 1) {
+			showNumberOfPlayersDialog();
+			start();
+		} else {
+			// record score
+			System.out.println(String.format("num guesses: %d", gameManager.getCurrentGuess()));
+			if (gameManager.isSolved()) {
+				matchManager.setCodeMakerScore(gameManager.getCurrentGuess() - 1);
+			} else {
+				matchManager.setCodeMakerScore(11);
+			}
+			
+			matchManager.incrementGame();
+			if (matchManager.getCurrentGame() <= matchManager.getMaxGamesPerRound()) {
+				// next game
+				startNewGame();
+			} else {
+				if (matchManager.getCurrentRound() < matchManager.getMaxRounds()) {
+					// next round
+					matchManager.startNewRound();
+					startNewGame();
+				} else {
+					// end of match
+					
+					// to do: show dialog with winner
+					System.out.println(String.format("Player1 Score: %d", matchManager.getPlayer1().getScore()));
+					System.out.println(String.format("Player2 Score: %d", matchManager.getPlayer2().getScore()));
+					
+					showEndOfMatchDialog("The Winner");
+					showNumberOfPlayersDialog();
+					start();
+				}
+
+			}
+		}
+	}
+	
+	
+	/**
+	 * Handle the 3 main button clicks from the view.
+	 * 
+	 * The 3 main buttons are:
+	 * 1. Guess Button
+	 * 2. Set Code Button
+	 * 3. Quit Button
+	 * 
+	 */
+	@Override
+	public void actionPerformed(ActionEvent event) {
+		
+		if ("GUESS_CODE".equals(event.getActionCommand())) {
+			
+			CodePeg[] currentGuess = getCurrentGuessFromView();
+			
+			// check to make sure code breaker used all pegs
+			if (Arrays.asList(currentGuess).contains(CodePeg.NONE)) {
+				showGuessErrorDialog();
+				return;
+			}
+			
+			KeyPeg[] result = gameManager.makeGuess(currentGuess);		
+			feedbackRows.setPegColorsForRow(getCurrentRow(), convertKeyPegRowToColorRow(result));
+			guessRows.enableRow(getCurrentRow(), false);
+			
+			if (gameManager.isSolved()) {
+				codeRow.setVisible(true);		
+				showSuccessDialog();
+				endGame();
+			} else if (gameManager.getCurrentGuess() == gameManager.getMaxGuesses()) {
+				codeRow.setVisible(true);
+				showFailedDialog();
+				endGame();
+			} else {
+				gameManager.incrementGuess();
+				guessRows.enableRow(getCurrentRow(), true);			
+			}
+		
+		} else if ("SET_CODE".equals(event.getActionCommand())) {
+			// get the code row and pass it to the MODEL, then hide everything
+			CodePeg[] currentCode = getCodeFromView();
+			
+			// check to make sure code breaker used all pegs
+			if (Arrays.asList(currentCode).contains(CodePeg.NONE)) {
+				showSetCodeErrorDialog();
+				return;
+			}
+			
+			// disable code row
+			gameBoardView.getCodeButton().setVisible(false);
+			codeRow.setVisible(false);
+			codeRow.enableRow(0, false);
+			
+			// send the code row to the MODEL
+			gameManager.setCodeRow(currentCode);
+			
+			// enable 1st guess row
+			guessRows.enableRow(getCurrentRow(), true);
+			
+			// enable guess button
+			gameBoardView.getGuessButton().setEnabled(true);
+			
+			// tell the code breaker to begin guessing
+			showGuessCodeDialog(matchManager.getCurrentCodeBreaker().getName());
+		}
+	}
+	
+	/**
+	 * get the current guess row
+	 * @return
+	 */
+	protected int getCurrentRow() {
+		return gameManager.getMaxGuesses() - gameManager.getCurrentGuess();
+	}
+	
+	/**
+	 * get the current guess from the View
+	 * and return it as Model colors
+	 * @return
+	 */
+	protected CodePeg[] getCurrentGuessFromView() {
+		Color[] pegColors = guessRows.getPegColorsForRow(getCurrentRow());
+		CodePeg[] guess = new CodePeg[4];
+		
+		for(int i = 0; i < pegColors.length; i++) {
+			guess[i] = convertColorToCodePeg(pegColors[i]);
+			System.out.println(guess[i].toString());
+		}
+		return guess;
+	}
+	
+	/**
+	 * in a 2 player game retrieve the code from the view
+	 * @return
+	 */
+	protected CodePeg[] getCodeFromView() {
+		Color[] pegColors = codeRow.getPegColors();
+		CodePeg[] code = new CodePeg[4];
+		
+		for(int i = 0; i < pegColors.length; i++) {
+			code[i] = convertColorToCodePeg(pegColors[i]);
+			System.out.println(code[i].toString());
+		}
+		return code;
+	}
+	
+	/**
+	 * convert from the Model representation
+	 * to the View representation
+	 * @param codeRow
+	 * @return color
+	 */
+	protected Color[] convertCodePegRowToColorRow(CodePeg[] codeRow) {
+		Color[] pegColors = new Color[4];
+		
+		for(int i = 0; i < pegColors.length; i++) {
+			pegColors[i] = convertCodePegToColor(codeRow[i]);
+		}
+		return pegColors;
+	}
+	
+	/**
+	 * Map Colors to CodePegs
+	 * @param color
+	 * @return CodePeg
+	 */
+	protected CodePeg convertColorToCodePeg(Color color) {
+		CodePeg codePeg = CodePeg.NONE;
+		
+		if (color.equals(Color.RED)) {
+			codePeg = CodePeg.RED;
+		} else if (color.equals(Color.BLUE)) {
+			codePeg = CodePeg.BLUE;
+		} else if (color.equals(Color.GREEN)) {
+			codePeg = CodePeg.GREEN;
+		} else if (color.equals(Color.YELLOW)) {
+			codePeg = CodePeg.YELLOW;
+		} else if (color.equals(Color.BLACK)) {
+			codePeg = CodePeg.BLACK;
+		} else if (color.equals(Color.WHITE)) {
+			codePeg = CodePeg.WHITE;
+		}
+		return codePeg;
+	}
+	
+	/**
+	 * Map CodePegs to Colors
+	 * @param codePeg
+	 * @return Color
+	 */
+	protected Color convertCodePegToColor(CodePeg codePeg) {
+		Color color = Color.RED;
+		
+		if (codePeg.equals(CodePeg.RED)) {
+			color = Color.RED;
+		} else if (codePeg.equals(CodePeg.BLUE)) {
+			color = Color.BLUE;
+		} else if (codePeg.equals(CodePeg.GREEN)) {
+			color = Color.GREEN;
+		} else if (codePeg.equals(CodePeg.YELLOW)) {
+			color = Color.YELLOW;
+		} else if (codePeg.equals(CodePeg.BLACK)) {
+			color = Color.BLACK;
+		} else if (codePeg.equals(CodePeg.WHITE)) {
+			color = Color.WHITE;
+		}
+		return color;
+	}
+	
+	/**
+	 * Covert feedback row from Model representation
+	 * to View representation
+	 * @param feebackRow
+	 * @return
+	 */
+	protected Color[] convertKeyPegRowToColorRow(KeyPeg[] feebackRow) {
+		Color[] pegColors = new Color[4];
+		
+		for(int i = 0; i < pegColors.length; i++) {
+			pegColors[i] = convertKeyPegToColor(feebackRow[i]);
+		}
+		return pegColors;
+	}
+	
+	/**
+	 * Map KeyPegs to Colors
+	 * @param keyPeg
+	 * @return
+	 */
+	protected Color convertKeyPegToColor(KeyPeg keyPeg) {
+		Color color = null;
+		
+		if (keyPeg.equals(KeyPeg.BLACK)) {
+			color = Color.BLACK;
+		} else if (keyPeg.equals(KeyPeg.WHITE)) {
+			color = Color.WHITE;
+		}
+		return color;
+	}
+	
+	/**
+	 * Prompt the user to select number of players.
+	 */
+	private void showNumberOfPlayersDialog() {
+		Object[] options = {"Single Player",
+		                    "Two Players"};
+		
+		int n = JOptionPane.showOptionDialog(
+					gameBoardView,
+				    "Welcome to Mastermind. Select number of players.",
+				    "Welcome",
+				    JOptionPane.YES_NO_OPTION,
+				    JOptionPane.QUESTION_MESSAGE,
+				    null,
+				    options,
+				    options[0]
+			    );
+		
+		numPlayers = n == 0 ? 1 : 2;
+	}
+	
+	private void showSuccessDialog() {
+		JOptionPane.showMessageDialog(
+				gameBoardView, 
+				"Congratulations! You guessed the code."
+			);
+	}
+	
+	private void showFailedDialog() {
+		JOptionPane.showMessageDialog(
+				gameBoardView, 
+				"Sorry, You didn't guess the code. Better luck next time."
+			);
+	}
+	
+	private void showGuessErrorDialog() {
+		JOptionPane.showMessageDialog(
+				gameBoardView, 
+				"You should use all 4 pegs in your guess."
+			);
+	}
+	
+	private void showSetCodeErrorDialog() {
+		JOptionPane.showMessageDialog(
+				gameBoardView, 
+				"You should use all 4 pegs in your code."
+			);
+	}
+	
+	private String showPlayerNameDialog(int playerNum) {
+		
+		String playerName = (String)JOptionPane.showInputDialog(
+				gameBoardView,
+                "",
+                String.format("Player %d Name", playerNum),
+                JOptionPane.PLAIN_MESSAGE,
+                null,
+                null,
+                String.format("Player %d", playerNum));
+		return playerName;
+	}
+	
+	private void showSetCodeDialog(String whichPlayer) {
+		JOptionPane.showMessageDialog(
+				gameBoardView, 
+				String.format("%s, create the secret code.", whichPlayer)
+			);
+	}
+	
+	private void showGuessCodeDialog(String whichPlayer) {
+		JOptionPane.showMessageDialog(
+				gameBoardView, 
+				String.format("%s, start guessing the code, you've got 10 guesses.", whichPlayer)
+			);
+	}
+	
+	private void showEndOfMatchDialog(String whichPlayer) {
+		JOptionPane.showMessageDialog(
+				gameBoardView, 
+				String.format("%s, won the match!", whichPlayer)
+			);
+	}
+}
