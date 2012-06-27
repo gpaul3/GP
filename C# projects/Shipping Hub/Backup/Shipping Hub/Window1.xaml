@@ -1,0 +1,30 @@
+﻿<Window x:Class="Shipping_Hub.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Shipping Hub" Height="339" Width="850">
+    <Grid Background="MistyRose">
+        <TextBox Height="23" Margin="120,41,0,0" Name="arrivedAt" VerticalAlignment="Top" HorizontalAlignment="Left" Width="149" />
+        <Label Height="28" HorizontalAlignment="Left" Margin="29,39,0,0" Name="label1" VerticalAlignment="Top" Width="71">Arrived at :</Label>
+        <Label HorizontalAlignment="Left" Margin="29,115,0,0" Name="packIDLabel" Width="75" Height="28" VerticalAlignment="Top">Package ID :</Label>
+        <TextBox Height="23" Margin="120,0,0,161" Name="idBox" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="149" />
+        <Label HorizontalAlignment="Left" Margin="29,0,0,120" Name="addressLabel" Width="71" Height="28" VerticalAlignment="Bottom">Address :</Label>
+        <TextBox Margin="120,0,372,123" Name="addressBox" Height="23" VerticalAlignment="Bottom" />
+        <Label HorizontalAlignment="Left" Margin="33,0,0,82" Name="cityLabel" Width="71" Height="28" VerticalAlignment="Bottom">City :</Label>
+        <TextBox Margin="120,0,0,85" Name="cityBox" HorizontalAlignment="Left" Width="149" Height="23" VerticalAlignment="Bottom" />
+        <Label Margin="279,0,0,82" Name="stateLabel" Height="28" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="71">State :</Label>
+        <Label HorizontalAlignment="Right" Margin="0,0,285,82" Name="zipLabel" Width="71" Height="28" VerticalAlignment="Bottom">Zip :</Label>
+        <TextBox HorizontalAlignment="Right" Margin="0,0,220,85" Name="zipBox" Width="95" Height="23" VerticalAlignment="Bottom" />
+        <Button Height="23" HorizontalAlignment="Left" Margin="29,0,0,34" Name="backButton" VerticalAlignment="Bottom" Width="75" Click="backButton_Click">&lt;BACK</Button>
+        <Button Height="23" HorizontalAlignment="Left" Margin="130,0,0,34" Name="scanNewButton" VerticalAlignment="Bottom" Width="75" Focusable="False" Click="scanNewButton_Click">Scan New</Button>
+        <Button Height="23" HorizontalAlignment="Left" Margin="231,0,0,34" Name="addButton" VerticalAlignment="Bottom" Width="75" Click="addButton_Click">Add</Button>
+        <Button Height="23" Margin="333,0,0,34" Name="removeButton" VerticalAlignment="Bottom" Click="removeButton_Click" HorizontalAlignment="Left" Width="75">Remove</Button>
+        <Button Height="23" Margin="0,0,319,34" Name="editButton" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="75" Click="editButton_Click">Edit</Button>
+        <Button Height="23" HorizontalAlignment="Right" Margin="0,0,220,34" Name="nextButton" VerticalAlignment="Bottom" Width="75" Click="nextButton_Click">NEXT&gt;</Button>
+        <Label Height="39" HorizontalAlignment="Left" Margin="29,73,0,0" Name="PackInfo" VerticalAlignment="Top" Width="176" FontSize="14">Package Information</Label>
+        <Label Height="39" HorizontalAlignment="Right" Margin="0,73,171,0" Name="PackByState" VerticalAlignment="Top" Width="136" FontSize="14">Packages by State</Label>
+        <ComboBox Height="23" HorizontalAlignment="Right" Margin="0,76,35,0" Name="stateNames1" VerticalAlignment="Top" Width="138" SelectionChanged="stateNames1_SelectionChanged" />
+        <ComboBox Height ="23"
+                  Margin="333,0,372,83" Name="stateNames2" VerticalAlignment="Bottom" />
+        <ListBox HorizontalAlignment="Right" Margin="0,117,35,34" Name="idListBox" Width="138"  />
+    </Grid>
+</Window>

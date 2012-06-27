@@ -1,0 +1,42 @@
+C:\Users\geoffrey\Desktop\C#.NET\Midterm\Cartons\Cartons\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\geoffrey\Desktop\C#.NET\Midterm\Cartons\Cartons\obj\Debug\Window1.baml
+C:\Users\geoffrey\Desktop\C#.NET\Midterm\Cartons\Cartons\obj\Debug\Window1.g.cs
+C:\Users\geoffrey\Desktop\C#.NET\Midterm\Cartons\Cartons\obj\Debug\App.g.cs
+C:\Users\geoffrey\Desktop\C#.NET\Midterm\Cartons\Cartons\obj\Debug\Cartons_MarkupCompile.cache
+C:\Users\geoffrey\Desktop\C#.NET\Midterm\Cartons\Cartons\obj\Debug\Cartons.g.resources
+C:\Users\geoffrey\Desktop\C#.NET\Midterm\Cartons\Cartons\obj\Debug\Cartons.Properties.Resources.resources
+C:\Users\geoffrey\Desktop\C#.NET\Midterm\Cartons\Cartons\obj\Debug\Cartons.csproj.GenerateResource.Cache
+C:\Users\geoffrey\Desktop\C#.NET\Midterm\Cartons\Cartons\bin\Debug\Cartons.exe
+C:\Users\geoffrey\Desktop\C#.NET\Midterm\Cartons\Cartons\bin\Debug\Cartons.pdb
+C:\Users\geoffrey\Desktop\C#.NET\Midterm\Cartons\Cartons\obj\Debug\Cartons.exe
+C:\Users\geoffrey\Desktop\C#.NET\Midterm\Cartons\Cartons\obj\Debug\Cartons.pdb
+C:\Users\OWner\Documents\UIS\C#.NET\Midterm\Cartons\Cartons\obj\Debug\Cartons.exe
+C:\Users\OWner\Documents\UIS\C#.NET\Midterm\Cartons\Cartons\obj\Debug\Cartons.pdb
+C:\Users\OWner\Documents\UIS\C#.NET\Midterm\Cartons\Cartons\bin\Debug\Cartons.exe
+C:\Users\OWner\Documents\UIS\C#.NET\Midterm\Cartons\Cartons\bin\Debug\Cartons.pdb
+C:\Users\OWner\Documents\UIS\C#.NET\Midterm\Cartons\Cartons\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\OWner\Documents\UIS\C#.NET\Midterm\Cartons\Cartons\obj\Debug\Window1.baml
+C:\Users\OWner\Documents\UIS\C#.NET\Midterm\Cartons\Cartons\obj\Debug\Window1.g.cs
+C:\Users\OWner\Documents\UIS\C#.NET\Midterm\Cartons\Cartons\obj\Debug\App.g.cs
+C:\Users\OWner\Documents\UIS\C#.NET\Midterm\Cartons\Cartons\obj\Debug\Cartons_MarkupCompile.cache
+C:\Users\OWner\Documents\UIS\C#.NET\Midterm\Cartons\Cartons\obj\Debug\Cartons.g.resources
+C:\Users\OWner\Documents\UIS\C#.NET\Midterm\Cartons\Cartons\obj\Debug\Cartons.Properties.Resources.resources
+C:\Users\OWner\Documents\UIS\C#.NET\Midterm\Cartons\Cartons\obj\Debug\ResGen.read.1.tlog
+C:\Users\OWner\Documents\UIS\C#.NET\Midterm\Cartons\Cartons\obj\Debug\ResGen.write.1.tlog
+C:\Users\OWner\Documents\UIS\C#.NET\Midterm\Cartons\Cartons\bin\Debug\Cartons.exe.manifest
+C:\Users\OWner\Documents\UIS\C#.NET\Midterm\Cartons\Cartons\bin\Debug\Cartons.application
+C:\Users\OWner\Documents\UIS\C#.NET\Midterm\Cartons\Cartons\obj\Debug\Cartons.exe.manifest
+C:\Users\OWner\Documents\UIS\C#.NET\Midterm\Cartons\Cartons\obj\Debug\Cartons.application
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\Midterm\Cartons\Cartons\obj\Debug\Cartons.exe
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\Midterm\Cartons\Cartons\obj\Debug\Cartons.pdb
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\Midterm\Cartons\Cartons\bin\Debug\Cartons.exe
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\Midterm\Cartons\Cartons\bin\Debug\Cartons.pdb
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\Midterm\Cartons\Cartons\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\Midterm\Cartons\Cartons\obj\Debug\Window1.baml
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\Midterm\Cartons\Cartons\obj\Debug\Window1.g.cs
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\Midterm\Cartons\Cartons\obj\Debug\App.g.cs
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\Midterm\Cartons\Cartons\obj\Debug\Cartons_MarkupCompile.cache
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\Midterm\Cartons\Cartons\obj\Debug\Cartons.g.resources
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\Midterm\Cartons\Cartons\obj\Debug\Cartons.Properties.Resources.resources
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\Midterm\Cartons\Cartons\obj\Debug\ResGen.read.1.tlog
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\Midterm\Cartons\Cartons\obj\Debug\ResGen.write.1.tlog

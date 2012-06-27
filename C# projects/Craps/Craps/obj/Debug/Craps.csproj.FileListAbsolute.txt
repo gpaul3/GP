@@ -1,0 +1,46 @@
+C:\Users\geoffrey\Desktop\C#.NET\Midterm\Craps\Craps\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\geoffrey\Desktop\C#.NET\Midterm\Craps\Craps\obj\Debug\Window1.baml
+C:\Users\geoffrey\Desktop\C#.NET\Midterm\Craps\Craps\obj\Debug\Window1.g.cs
+C:\Users\geoffrey\Desktop\C#.NET\Midterm\Craps\Craps\obj\Debug\App.g.cs
+C:\Users\geoffrey\Desktop\C#.NET\Midterm\Craps\Craps\obj\Debug\Craps_MarkupCompile.cache
+C:\Users\geoffrey\Desktop\C#.NET\Midterm\Craps\Craps\obj\Debug\Craps.g.resources
+C:\Users\geoffrey\Desktop\C#.NET\Midterm\Craps\Craps\obj\Debug\Craps.Properties.Resources.resources
+C:\Users\geoffrey\Desktop\C#.NET\Midterm\Craps\Craps\obj\Debug\Craps.csproj.GenerateResource.Cache
+C:\Users\geoffrey\Desktop\C#.NET\Midterm\Craps\Craps\bin\Debug\Craps.exe
+C:\Users\geoffrey\Desktop\C#.NET\Midterm\Craps\Craps\bin\Debug\Craps.pdb
+C:\Users\geoffrey\Desktop\C#.NET\Midterm\Craps\Craps\obj\Debug\Craps.exe
+C:\Users\geoffrey\Desktop\C#.NET\Midterm\Craps\Craps\obj\Debug\Craps.pdb
+C:\Users\OWner\Documents\UIS\C#.NET\Midterm\Craps\Craps\bin\Debug\Craps.exe.manifest
+C:\Users\OWner\Documents\UIS\C#.NET\Midterm\Craps\Craps\bin\Debug\Craps.application
+C:\Users\OWner\Documents\UIS\C#.NET\Midterm\Craps\Craps\bin\Debug\Craps.exe
+C:\Users\OWner\Documents\UIS\C#.NET\Midterm\Craps\Craps\bin\Debug\Craps.pdb
+C:\Users\OWner\Documents\UIS\C#.NET\Midterm\Craps\Craps\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\OWner\Documents\UIS\C#.NET\Midterm\Craps\Craps\obj\Debug\Window1.baml
+C:\Users\OWner\Documents\UIS\C#.NET\Midterm\Craps\Craps\obj\Debug\Window1.g.cs
+C:\Users\OWner\Documents\UIS\C#.NET\Midterm\Craps\Craps\obj\Debug\App.g.cs
+C:\Users\OWner\Documents\UIS\C#.NET\Midterm\Craps\Craps\obj\Debug\Craps_MarkupCompile.cache
+C:\Users\OWner\Documents\UIS\C#.NET\Midterm\Craps\Craps\obj\Debug\Craps.g.resources
+C:\Users\OWner\Documents\UIS\C#.NET\Midterm\Craps\Craps\obj\Debug\Craps.Properties.Resources.resources
+C:\Users\OWner\Documents\UIS\C#.NET\Midterm\Craps\Craps\obj\Debug\ResGen.read.1.tlog
+C:\Users\OWner\Documents\UIS\C#.NET\Midterm\Craps\Craps\obj\Debug\ResGen.write.1.tlog
+C:\Users\OWner\Documents\UIS\C#.NET\Midterm\Craps\Craps\obj\Debug\Craps.exe.manifest
+C:\Users\OWner\Documents\UIS\C#.NET\Midterm\Craps\Craps\obj\Debug\Craps.application
+C:\Users\OWner\Documents\UIS\C#.NET\Midterm\Craps\Craps\obj\Debug\Craps.exe
+C:\Users\OWner\Documents\UIS\C#.NET\Midterm\Craps\Craps\obj\Debug\Craps.pdb
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\Midterm\Craps\Craps\obj\Debug\Craps.exe
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\Midterm\Craps\Craps\obj\Debug\Craps.pdb
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\Midterm\Craps\Craps\bin\Debug\Craps.exe.manifest
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\Midterm\Craps\Craps\bin\Debug\Craps.application
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\Midterm\Craps\Craps\bin\Debug\Craps.exe
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\Midterm\Craps\Craps\bin\Debug\Craps.pdb
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\Midterm\Craps\Craps\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\Midterm\Craps\Craps\obj\Debug\Window1.baml
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\Midterm\Craps\Craps\obj\Debug\Window1.g.cs
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\Midterm\Craps\Craps\obj\Debug\App.g.cs
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\Midterm\Craps\Craps\obj\Debug\Craps_MarkupCompile.cache
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\Midterm\Craps\Craps\obj\Debug\Craps.g.resources
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\Midterm\Craps\Craps\obj\Debug\Craps.Properties.Resources.resources
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\Midterm\Craps\Craps\obj\Debug\ResGen.read.1.tlog
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\Midterm\Craps\Craps\obj\Debug\ResGen.write.1.tlog
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\Midterm\Craps\Craps\obj\Debug\Craps.exe.manifest
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\Midterm\Craps\Craps\obj\Debug\Craps.application

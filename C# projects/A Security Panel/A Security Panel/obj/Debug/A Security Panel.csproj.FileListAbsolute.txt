@@ -1,0 +1,38 @@
+C:\Users\geoffrey\Desktop\C#.NET\labs\Lab 5\A Security Panel\A Security Panel\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\geoffrey\Desktop\C#.NET\labs\Lab 5\A Security Panel\A Security Panel\obj\Debug\Window1.baml
+C:\Users\geoffrey\Desktop\C#.NET\labs\Lab 5\A Security Panel\A Security Panel\obj\Debug\Window1.g.cs
+C:\Users\geoffrey\Desktop\C#.NET\labs\Lab 5\A Security Panel\A Security Panel\obj\Debug\App.g.cs
+C:\Users\geoffrey\Desktop\C#.NET\labs\Lab 5\A Security Panel\A Security Panel\obj\Debug\A Security Panel_MarkupCompile.cache
+C:\Users\geoffrey\Desktop\C#.NET\labs\Lab 5\A Security Panel\A Security Panel\obj\Debug\A Security Panel.g.resources
+C:\Users\geoffrey\Desktop\C#.NET\labs\Lab 5\A Security Panel\A Security Panel\obj\Debug\A_Security_Panel.Properties.Resources.resources
+C:\Users\geoffrey\Desktop\C#.NET\labs\Lab 5\A Security Panel\A Security Panel\obj\Debug\A Security Panel.csproj.GenerateResource.Cache
+C:\Users\geoffrey\Desktop\C#.NET\labs\Lab 5\A Security Panel\A Security Panel\bin\Debug\A Security Panel.exe
+C:\Users\geoffrey\Desktop\C#.NET\labs\Lab 5\A Security Panel\A Security Panel\bin\Debug\A Security Panel.pdb
+C:\Users\geoffrey\Desktop\C#.NET\labs\Lab 5\A Security Panel\A Security Panel\obj\Debug\A Security Panel.exe
+C:\Users\geoffrey\Desktop\C#.NET\labs\Lab 5\A Security Panel\A Security Panel\obj\Debug\A Security Panel.pdb
+C:\Users\OWner\Documents\UIS\C#.NET\labs\Lab 5\A Security Panel\A Security Panel\obj\Debug\A Security Panel.exe
+C:\Users\OWner\Documents\UIS\C#.NET\labs\Lab 5\A Security Panel\A Security Panel\obj\Debug\A Security Panel.pdb
+C:\Users\OWner\Documents\UIS\C#.NET\labs\Lab 5\A Security Panel\A Security Panel\bin\Debug\A Security Panel.exe
+C:\Users\OWner\Documents\UIS\C#.NET\labs\Lab 5\A Security Panel\A Security Panel\bin\Debug\A Security Panel.pdb
+C:\Users\OWner\Documents\UIS\C#.NET\labs\Lab 5\A Security Panel\A Security Panel\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\OWner\Documents\UIS\C#.NET\labs\Lab 5\A Security Panel\A Security Panel\obj\Debug\Window1.baml
+C:\Users\OWner\Documents\UIS\C#.NET\labs\Lab 5\A Security Panel\A Security Panel\obj\Debug\Window1.g.cs
+C:\Users\OWner\Documents\UIS\C#.NET\labs\Lab 5\A Security Panel\A Security Panel\obj\Debug\App.g.cs
+C:\Users\OWner\Documents\UIS\C#.NET\labs\Lab 5\A Security Panel\A Security Panel\obj\Debug\A Security Panel_MarkupCompile.cache
+C:\Users\OWner\Documents\UIS\C#.NET\labs\Lab 5\A Security Panel\A Security Panel\obj\Debug\A Security Panel.g.resources
+C:\Users\OWner\Documents\UIS\C#.NET\labs\Lab 5\A Security Panel\A Security Panel\obj\Debug\A_Security_Panel.Properties.Resources.resources
+C:\Users\OWner\Documents\UIS\C#.NET\labs\Lab 5\A Security Panel\A Security Panel\obj\Debug\ResGen.read.1.tlog
+C:\Users\OWner\Documents\UIS\C#.NET\labs\Lab 5\A Security Panel\A Security Panel\obj\Debug\ResGen.write.1.tlog
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\labs\Lab 5\A Security Panel\A Security Panel\obj\Debug\A Security Panel.exe
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\labs\Lab 5\A Security Panel\A Security Panel\obj\Debug\A Security Panel.pdb
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\labs\Lab 5\A Security Panel\A Security Panel\bin\Debug\A Security Panel.exe
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\labs\Lab 5\A Security Panel\A Security Panel\bin\Debug\A Security Panel.pdb
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\labs\Lab 5\A Security Panel\A Security Panel\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\labs\Lab 5\A Security Panel\A Security Panel\obj\Debug\Window1.baml
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\labs\Lab 5\A Security Panel\A Security Panel\obj\Debug\Window1.g.cs
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\labs\Lab 5\A Security Panel\A Security Panel\obj\Debug\App.g.cs
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\labs\Lab 5\A Security Panel\A Security Panel\obj\Debug\A Security Panel_MarkupCompile.cache
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\labs\Lab 5\A Security Panel\A Security Panel\obj\Debug\A Security Panel.g.resources
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\labs\Lab 5\A Security Panel\A Security Panel\obj\Debug\A_Security_Panel.Properties.Resources.resources
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\labs\Lab 5\A Security Panel\A Security Panel\obj\Debug\ResGen.read.1.tlog
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\labs\Lab 5\A Security Panel\A Security Panel\obj\Debug\ResGen.write.1.tlog

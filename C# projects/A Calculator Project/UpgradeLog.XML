@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="A Calculator Project">
+</Property><Property Name="Solution File" Value="C:\Users\OWner\Documents\UIS\C#.NET\projects\Project 3\A Calculator Project\A Calculator Project.sln">
+</Property><Property Name="User Options File" Value="C:\Users\OWner\Documents\UIS\C#.NET\projects\Project 3\A Calculator Project\A Calculator Project.suo">
+</Property><Property Name="Date" Value="Thursday, May 03, 2012">
+</Property><Property Name="Time" Value="21:21 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="A Calculator Project.sln" Description="File successfully backed up as C:\Users\OWner\Documents\UIS\C#.NET\projects\Project 3\A Calculator Project\Backup\A Calculator Project.sln">
+</Event><Event ErrorLevel="0" Project="" Source="A Calculator Project.suo" Description="File successfully backed up as C:\Users\OWner\Documents\UIS\C#.NET\projects\Project 3\A Calculator Project\Backup\A Calculator Project.suo">
+</Event><Event ErrorLevel="0" Project="A Calculator Project" Source="A Calculator Project\A Calculator Project.csproj" Description="Project file successfully backed up as C:\Users\OWner\Documents\UIS\C#.NET\projects\Project 3\A Calculator Project\Backup\A Calculator Project\A Calculator Project.csproj">
+</Event><Event ErrorLevel="0" Project="A Calculator Project" Source="A Calculator Project\App.xaml.cs" Description="File successfully backed up as C:\Users\OWner\Documents\UIS\C#.NET\projects\Project 3\A Calculator Project\Backup\A Calculator Project\App.xaml.cs">
+</Event><Event ErrorLevel="0" Project="A Calculator Project" Source="A Calculator Project\Window1.xaml.cs" Description="File successfully backed up as C:\Users\OWner\Documents\UIS\C#.NET\projects\Project 3\A Calculator Project\Backup\A Calculator Project\Window1.xaml.cs">
+</Event><Event ErrorLevel="0" Project="A Calculator Project" Source="A Calculator Project\Calculator.cs" Description="File successfully backed up as C:\Users\OWner\Documents\UIS\C#.NET\projects\Project 3\A Calculator Project\Backup\A Calculator Project\Calculator.cs">
+</Event><Event ErrorLevel="0" Project="A Calculator Project" Source="A Calculator Project\Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Users\OWner\Documents\UIS\C#.NET\projects\Project 3\A Calculator Project\Backup\A Calculator Project\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="A Calculator Project" Source="A Calculator Project\Properties\Resources.Designer.cs" Description="File successfully backed up as C:\Users\OWner\Documents\UIS\C#.NET\projects\Project 3\A Calculator Project\Backup\A Calculator Project\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="A Calculator Project" Source="A Calculator Project\Properties\Settings.Designer.cs" Description="File successfully backed up as C:\Users\OWner\Documents\UIS\C#.NET\projects\Project 3\A Calculator Project\Backup\A Calculator Project\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="A Calculator Project" Source="A Calculator Project\Properties\Settings.settings" Description="File successfully backed up as C:\Users\OWner\Documents\UIS\C#.NET\projects\Project 3\A Calculator Project\Backup\A Calculator Project\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="A Calculator Project" Source="A Calculator Project\Properties\Resources.resx" Description="File successfully backed up as C:\Users\OWner\Documents\UIS\C#.NET\projects\Project 3\A Calculator Project\Backup\A Calculator Project\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="A Calculator Project" Source="A Calculator Project\App.xaml" Description="File successfully backed up as C:\Users\OWner\Documents\UIS\C#.NET\projects\Project 3\A Calculator Project\Backup\A Calculator Project\App.xaml">
+</Event><Event ErrorLevel="0" Project="A Calculator Project" Source="A Calculator Project\Window1.xaml" Description="File successfully backed up as C:\Users\OWner\Documents\UIS\C#.NET\projects\Project 3\A Calculator Project\Backup\A Calculator Project\Window1.xaml">
+</Event><Event ErrorLevel="0" Project="A Calculator Project" Source="A Calculator Project\A Calculator Project.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="A Calculator Project" Source="A Calculator Project\A Calculator Project.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="A Calculator Project.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="A Calculator Project.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="A Calculator Project" Source="A Calculator Project\A Calculator Project.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

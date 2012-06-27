@@ -1,0 +1,50 @@
+C:\Users\geoffrey\Desktop\C#.NET\projects\Project 3\A Calculator Project\A Calculator Project\bin\Debug\A Calculator Project.exe
+C:\Users\geoffrey\Desktop\C#.NET\projects\Project 3\A Calculator Project\A Calculator Project\bin\Debug\A Calculator Project.pdb
+C:\Users\geoffrey\Desktop\C#.NET\projects\Project 3\A Calculator Project\A Calculator Project\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\geoffrey\Desktop\C#.NET\projects\Project 3\A Calculator Project\A Calculator Project\obj\Debug\Window1.baml
+C:\Users\geoffrey\Desktop\C#.NET\projects\Project 3\A Calculator Project\A Calculator Project\obj\Debug\Window1.g.cs
+C:\Users\geoffrey\Desktop\C#.NET\projects\Project 3\A Calculator Project\A Calculator Project\obj\Debug\App.g.cs
+C:\Users\geoffrey\Desktop\C#.NET\projects\Project 3\A Calculator Project\A Calculator Project\obj\Debug\A Calculator Project_MarkupCompile.cache
+C:\Users\geoffrey\Desktop\C#.NET\projects\Project 3\A Calculator Project\A Calculator Project\obj\Debug\A Calculator Project.g.resources
+C:\Users\geoffrey\Desktop\C#.NET\projects\Project 3\A Calculator Project\A Calculator Project\obj\Debug\A_Calculator_Project.Properties.Resources.resources
+C:\Users\geoffrey\Desktop\C#.NET\projects\Project 3\A Calculator Project\A Calculator Project\obj\Debug\A Calculator Project.csproj.GenerateResource.Cache
+C:\Users\geoffrey\Desktop\C#.NET\projects\Project 3\A Calculator Project\A Calculator Project\obj\Debug\A Calculator Project.exe
+C:\Users\geoffrey\Desktop\C#.NET\projects\Project 3\A Calculator Project\A Calculator Project\obj\Debug\A Calculator Project.pdb
+C:\Users\geoffrey\Desktop\C#.NET\projects\Project 3\A Calculator Project - 2\A Calculator Project\obj\Debug\A Calculator Project.exe
+C:\Users\geoffrey\Desktop\C#.NET\projects\Project 3\A Calculator Project - 2\A Calculator Project\obj\Debug\A Calculator Project.pdb
+C:\Users\geoffrey\Desktop\C#.NET\projects\Project 3\A Calculator Project - 2\A Calculator Project\bin\Debug\A Calculator Project.exe
+C:\Users\geoffrey\Desktop\C#.NET\projects\Project 3\A Calculator Project - 2\A Calculator Project\bin\Debug\A Calculator Project.pdb
+C:\Users\geoffrey\Desktop\C#.NET\projects\Project 3\A Calculator Project - 2\A Calculator Project\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\geoffrey\Desktop\C#.NET\projects\Project 3\A Calculator Project - 2\A Calculator Project\obj\Debug\Window1.baml
+C:\Users\geoffrey\Desktop\C#.NET\projects\Project 3\A Calculator Project - 2\A Calculator Project\obj\Debug\Window1.g.cs
+C:\Users\geoffrey\Desktop\C#.NET\projects\Project 3\A Calculator Project - 2\A Calculator Project\obj\Debug\App.g.cs
+C:\Users\geoffrey\Desktop\C#.NET\projects\Project 3\A Calculator Project - 2\A Calculator Project\obj\Debug\A Calculator Project_MarkupCompile.cache
+C:\Users\geoffrey\Desktop\C#.NET\projects\Project 3\A Calculator Project - 2\A Calculator Project\obj\Debug\A Calculator Project.g.resources
+C:\Users\geoffrey\Desktop\C#.NET\projects\Project 3\A Calculator Project - 2\A Calculator Project\obj\Debug\A_Calculator_Project.Properties.Resources.resources
+C:\Users\geoffrey\Desktop\C#.NET\projects\Project 3\A Calculator Project - 2\A Calculator Project\obj\Debug\A Calculator Project.csproj.GenerateResource.Cache
+C:\Users\OWner\Documents\UIS\C#.NET\projects\Project 3\A Calculator Project\A Calculator Project\obj\Debug\A Calculator Project.exe
+C:\Users\OWner\Documents\UIS\C#.NET\projects\Project 3\A Calculator Project\A Calculator Project\obj\Debug\A Calculator Project.pdb
+C:\Users\OWner\Documents\UIS\C#.NET\projects\Project 3\A Calculator Project\A Calculator Project\bin\Debug\A Calculator Project.exe
+C:\Users\OWner\Documents\UIS\C#.NET\projects\Project 3\A Calculator Project\A Calculator Project\bin\Debug\A Calculator Project.pdb
+C:\Users\OWner\Documents\UIS\C#.NET\projects\Project 3\A Calculator Project\A Calculator Project\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\OWner\Documents\UIS\C#.NET\projects\Project 3\A Calculator Project\A Calculator Project\obj\Debug\Window1.baml
+C:\Users\OWner\Documents\UIS\C#.NET\projects\Project 3\A Calculator Project\A Calculator Project\obj\Debug\Window1.g.cs
+C:\Users\OWner\Documents\UIS\C#.NET\projects\Project 3\A Calculator Project\A Calculator Project\obj\Debug\App.g.cs
+C:\Users\OWner\Documents\UIS\C#.NET\projects\Project 3\A Calculator Project\A Calculator Project\obj\Debug\A Calculator Project_MarkupCompile.cache
+C:\Users\OWner\Documents\UIS\C#.NET\projects\Project 3\A Calculator Project\A Calculator Project\obj\Debug\A Calculator Project.g.resources
+C:\Users\OWner\Documents\UIS\C#.NET\projects\Project 3\A Calculator Project\A Calculator Project\obj\Debug\A_Calculator_Project.Properties.Resources.resources
+C:\Users\OWner\Documents\UIS\C#.NET\projects\Project 3\A Calculator Project\A Calculator Project\obj\Debug\ResGen.read.1.tlog
+C:\Users\OWner\Documents\UIS\C#.NET\projects\Project 3\A Calculator Project\A Calculator Project\obj\Debug\ResGen.write.1.tlog
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\projects\Project 3\A Calculator Project\A Calculator Project\obj\Debug\A Calculator Project.exe
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\projects\Project 3\A Calculator Project\A Calculator Project\obj\Debug\A Calculator Project.pdb
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\projects\Project 3\A Calculator Project\A Calculator Project\bin\Debug\A Calculator Project.exe
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\projects\Project 3\A Calculator Project\A Calculator Project\bin\Debug\A Calculator Project.pdb
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\projects\Project 3\A Calculator Project\A Calculator Project\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\projects\Project 3\A Calculator Project\A Calculator Project\obj\Debug\Window1.baml
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\projects\Project 3\A Calculator Project\A Calculator Project\obj\Debug\Window1.g.cs
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\projects\Project 3\A Calculator Project\A Calculator Project\obj\Debug\App.g.cs
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\projects\Project 3\A Calculator Project\A Calculator Project\obj\Debug\A Calculator Project_MarkupCompile.cache
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\projects\Project 3\A Calculator Project\A Calculator Project\obj\Debug\A Calculator Project.g.resources
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\projects\Project 3\A Calculator Project\A Calculator Project\obj\Debug\A_Calculator_Project.Properties.Resources.resources
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\projects\Project 3\A Calculator Project\A Calculator Project\obj\Debug\ResGen.read.1.tlog
+C:\Users\OWner\Documents\UIS\CSC470 - C#.NET\projects\Project 3\A Calculator Project\A Calculator Project\obj\Debug\ResGen.write.1.tlog

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Shipping Hub">
+</Property><Property Name="Solution File" Value="C:\Users\OWner\Documents\UIS\C#.NET\labs\Lab 6\Shipping Hub\Shipping Hub.sln">
+</Property><Property Name="User Options File" Value="C:\Users\OWner\Documents\UIS\C#.NET\labs\Lab 6\Shipping Hub\Shipping Hub.suo">
+</Property><Property Name="Date" Value="Tuesday, February 07, 2012">
+</Property><Property Name="Time" Value="21:23 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Shipping Hub.sln" Description="File successfully backed up as C:\Users\OWner\Documents\UIS\C#.NET\labs\Lab 6\Shipping Hub\Backup\Shipping Hub.sln">
+</Event><Event ErrorLevel="0" Project="" Source="Shipping Hub.suo" Description="File successfully backed up as C:\Users\OWner\Documents\UIS\C#.NET\labs\Lab 6\Shipping Hub\Backup\Shipping Hub.suo">
+</Event><Event ErrorLevel="0" Project="Shipping Hub" Source="Shipping Hub\Shipping Hub.csproj" Description="Project file successfully backed up as C:\Users\OWner\Documents\UIS\C#.NET\labs\Lab 6\Shipping Hub\Backup\Shipping Hub\Shipping Hub.csproj">
+</Event><Event ErrorLevel="0" Project="Shipping Hub" Source="Shipping Hub\App.xaml.cs" Description="File successfully backed up as C:\Users\OWner\Documents\UIS\C#.NET\labs\Lab 6\Shipping Hub\Backup\Shipping Hub\App.xaml.cs">
+</Event><Event ErrorLevel="0" Project="Shipping Hub" Source="Shipping Hub\Window1.xaml.cs" Description="File successfully backed up as C:\Users\OWner\Documents\UIS\C#.NET\labs\Lab 6\Shipping Hub\Backup\Shipping Hub\Window1.xaml.cs">
+</Event><Event ErrorLevel="0" Project="Shipping Hub" Source="Shipping Hub\Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Users\OWner\Documents\UIS\C#.NET\labs\Lab 6\Shipping Hub\Backup\Shipping Hub\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Shipping Hub" Source="Shipping Hub\Properties\Resources.Designer.cs" Description="File successfully backed up as C:\Users\OWner\Documents\UIS\C#.NET\labs\Lab 6\Shipping Hub\Backup\Shipping Hub\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Shipping Hub" Source="Shipping Hub\Properties\Settings.Designer.cs" Description="File successfully backed up as C:\Users\OWner\Documents\UIS\C#.NET\labs\Lab 6\Shipping Hub\Backup\Shipping Hub\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Shipping Hub" Source="Shipping Hub\Properties\Settings.settings" Description="File successfully backed up as C:\Users\OWner\Documents\UIS\C#.NET\labs\Lab 6\Shipping Hub\Backup\Shipping Hub\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="Shipping Hub" Source="Shipping Hub\Properties\Resources.resx" Description="File successfully backed up as C:\Users\OWner\Documents\UIS\C#.NET\labs\Lab 6\Shipping Hub\Backup\Shipping Hub\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="Shipping Hub" Source="Shipping Hub\App.xaml" Description="File successfully backed up as C:\Users\OWner\Documents\UIS\C#.NET\labs\Lab 6\Shipping Hub\Backup\Shipping Hub\App.xaml">
+</Event><Event ErrorLevel="0" Project="Shipping Hub" Source="Shipping Hub\Window1.xaml" Description="File successfully backed up as C:\Users\OWner\Documents\UIS\C#.NET\labs\Lab 6\Shipping Hub\Backup\Shipping Hub\Window1.xaml">
+</Event><Event ErrorLevel="0" Project="Shipping Hub" Source="Shipping Hub\Shipping Hub.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Shipping Hub" Source="Shipping Hub\Shipping Hub.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Shipping Hub.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Shipping Hub.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Shipping Hub" Source="Shipping Hub\Shipping Hub.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

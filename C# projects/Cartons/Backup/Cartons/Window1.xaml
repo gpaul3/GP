@@ -1,0 +1,14 @@
+﻿<Window x:Class="Cartons.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Cartons" Height="300" Width="300">
+    <Grid>
+        <Button Margin="20,0,20,94" Name="button1" Height="32" VerticalAlignment="Bottom" Click="button1_Click">Calculate Total</Button>
+        <Label Margin="20,89,138,0" Name="label1" Height="28" VerticalAlignment="Top">Items per carton:</Label>
+        <Label Height="28" Margin="20,37,130,0" Name="label2" VerticalAlignment="Top">Cartons per shipment:</Label>
+        <Label Height="28" Margin="20,0,138,45" Name="label3" VerticalAlignment="Bottom">Total Textbooks:</Label>
+        <TextBox Height="26" HorizontalAlignment="Right" Margin="0,37,20,0" Name="textBoxCartons" VerticalAlignment="Top" Width="95" />
+        <TextBox Height="26" HorizontalAlignment="Right" Margin="0,89,20,0" Name="textBoxItems" VerticalAlignment="Top" Width="95" />
+        <TextBox Height="26" HorizontalAlignment="Right" Margin="0,0,20,45" Name="textBoxTotal" VerticalAlignment="Bottom" Width="95" />
+    </Grid>
+</Window>

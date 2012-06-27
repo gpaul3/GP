@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="A Security Panel">
+</Property><Property Name="Solution File" Value="C:\Users\OWner\Documents\UIS\C#.NET\labs\Lab 5\A Security Panel\A Security Panel.sln">
+</Property><Property Name="User Options File" Value="C:\Users\OWner\Documents\UIS\C#.NET\labs\Lab 5\A Security Panel\A Security Panel.suo">
+</Property><Property Name="Date" Value="Thursday, May 03, 2012">
+</Property><Property Name="Time" Value="21:18 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="A Security Panel.sln" Description="File successfully backed up as C:\Users\OWner\Documents\UIS\C#.NET\labs\Lab 5\A Security Panel\Backup\A Security Panel.sln">
+</Event><Event ErrorLevel="0" Project="" Source="A Security Panel.suo" Description="File successfully backed up as C:\Users\OWner\Documents\UIS\C#.NET\labs\Lab 5\A Security Panel\Backup\A Security Panel.suo">
+</Event><Event ErrorLevel="0" Project="A Security Panel" Source="A Security Panel\A Security Panel.csproj" Description="Project file successfully backed up as C:\Users\OWner\Documents\UIS\C#.NET\labs\Lab 5\A Security Panel\Backup\A Security Panel\A Security Panel.csproj">
+</Event><Event ErrorLevel="0" Project="A Security Panel" Source="A Security Panel\App.xaml.cs" Description="File successfully backed up as C:\Users\OWner\Documents\UIS\C#.NET\labs\Lab 5\A Security Panel\Backup\A Security Panel\App.xaml.cs">
+</Event><Event ErrorLevel="0" Project="A Security Panel" Source="A Security Panel\Window1.xaml.cs" Description="File successfully backed up as C:\Users\OWner\Documents\UIS\C#.NET\labs\Lab 5\A Security Panel\Backup\A Security Panel\Window1.xaml.cs">
+</Event><Event ErrorLevel="0" Project="A Security Panel" Source="A Security Panel\Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Users\OWner\Documents\UIS\C#.NET\labs\Lab 5\A Security Panel\Backup\A Security Panel\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="A Security Panel" Source="A Security Panel\Properties\Resources.Designer.cs" Description="File successfully backed up as C:\Users\OWner\Documents\UIS\C#.NET\labs\Lab 5\A Security Panel\Backup\A Security Panel\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="A Security Panel" Source="A Security Panel\Properties\Settings.Designer.cs" Description="File successfully backed up as C:\Users\OWner\Documents\UIS\C#.NET\labs\Lab 5\A Security Panel\Backup\A Security Panel\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="A Security Panel" Source="A Security Panel\Properties\Settings.settings" Description="File successfully backed up as C:\Users\OWner\Documents\UIS\C#.NET\labs\Lab 5\A Security Panel\Backup\A Security Panel\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="A Security Panel" Source="A Security Panel\Properties\Resources.resx" Description="File successfully backed up as C:\Users\OWner\Documents\UIS\C#.NET\labs\Lab 5\A Security Panel\Backup\A Security Panel\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="A Security Panel" Source="A Security Panel\App.xaml" Description="File successfully backed up as C:\Users\OWner\Documents\UIS\C#.NET\labs\Lab 5\A Security Panel\Backup\A Security Panel\App.xaml">
+</Event><Event ErrorLevel="0" Project="A Security Panel" Source="A Security Panel\Window1.xaml" Description="File successfully backed up as C:\Users\OWner\Documents\UIS\C#.NET\labs\Lab 5\A Security Panel\Backup\A Security Panel\Window1.xaml">
+</Event><Event ErrorLevel="0" Project="A Security Panel" Source="A Security Panel\A Security Panel.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="A Security Panel" Source="A Security Panel\A Security Panel.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="A Security Panel.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="A Security Panel.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="A Security Panel" Source="A Security Panel\A Security Panel.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>
